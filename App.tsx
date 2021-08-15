@@ -1,5 +1,5 @@
 import React from 'react';
-import Login from './src/screens/Auth/Login';
+import {Login} from '@screens';
 
 const App = () => {
   return <Login />;
