@@ -1,0 +1,7 @@
+{
+  "login_screen_title": "Log In",
+  "login_screen_subtitle": "Welcome back",
+  "login_screen_input_email": "Email",
+  "login_screen_input_password": "Password",
+  "login_screen_forgot_password_label": "Forgot Password"
+}
