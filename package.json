@@ -14,10 +14,12 @@
     "@react-navigation/native-stack": "^6.0.5",
     "@types/i18n-js": "^3.8.2",
     "i18n-js": "^3.8.0",
+    "native-base": "2.15.2",
     "react": "17.0.1",
     "react-native": "0.64.1",
     "react-native-safe-area-context": "^3.3.0",
-    "react-native-screens": "^3.5.0"
+    "react-native-screens": "^3.5.0",
+    "react-native-svg": "^12.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
