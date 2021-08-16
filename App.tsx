@@ -1,8 +1,11 @@
 import React from 'react';
-import {Home} from '@screens';
+import {NavigationContainer} from '@react-navigation/native';
+import {AuthRoutes, HomeRoutes} from '@routes';
 
-const App = () => {
-  return <Home />;
-};
+const App = () => (
+  <NavigationContainer>
+    <HomeRoutes />
+  </NavigationContainer>
+);
 
 export default App;

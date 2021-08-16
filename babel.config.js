@@ -12,6 +12,8 @@ module.exports = {
           '@assets': './src/assets',
           '@components': './src/components',
           '@i18n': './src/i18n',
+          '@constants': './src/constants',
+          '@routes': './src/routes',
         },
       },
     ],
