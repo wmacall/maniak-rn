@@ -5,5 +5,7 @@
   "login_screen_input_password": "Password",
   "login_screen_forgot_password_label": "Forgot Password",
   "login_screen_have_account": "Don’t have an account? ",
-  "login_screen_sign_up": "Sign up here"
+  "login_screen_sign_up": "Sign up here",
+  "home_screen_title": "My Photos",
+  "home_screen_log_out_button": "LOG OUT"
 }

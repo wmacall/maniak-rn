@@ -4,4 +4,5 @@ export const COLORS = {
   TEAL_GREY: '#F5F5FA',
   GREY: '#8F92A9',
   BLACK: '#000000',
+  GREY_TWO: '#ECEDF2',
 };

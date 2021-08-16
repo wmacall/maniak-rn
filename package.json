@@ -13,6 +13,7 @@
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.0.5",
     "@types/i18n-js": "^3.8.2",
+    "axios": "^0.21.1",
     "i18n-js": "^3.8.0",
     "native-base": "2.15.2",
     "react": "17.0.1",

@@ -7,6 +7,7 @@ export const Typography: FC<ITypographyProps> = ({
   children,
   variant = 'normal',
   style,
+  numberOfLines,
 }) => {
   const getStyles = () => {
     switch (variant) {
@@ -27,5 +28,9 @@ export const Typography: FC<ITypographyProps> = ({
 
   const selectedStyle = getStyles();
 
-  return <Text style={[selectedStyle, style]}>{children}</Text>;
+  return (
+    <Text numberOfLines={numberOfLines} style={[selectedStyle, style]}>
+      {children}
+    </Text>
+  );
 };
