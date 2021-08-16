@@ -26,4 +26,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginTop: theme.scaleHeight(160),
   },
+  passwordContainer: {
+    paddingRight: theme.scaleWidth(72),
+  },
 });

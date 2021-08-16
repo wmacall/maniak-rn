@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
-import {View, TextInput} from 'react-native';
+import {View, TextInput, Pressable} from 'react-native';
 import {IInputProps} from './types';
-import {COLORS} from '@assets';
+import {COLORS, EyeIcon} from '@assets';
 import styles from './styles';
 import {Typography} from '../Typography';
 
@@ -18,6 +18,8 @@ export const Input: FC<IInputProps> = ({
   containerStyle,
   labelStyle,
   labelVariant = 'label',
+  icon,
+  onPressIcon,
 }) => (
   <View style={[styles.container, containerStyle]}>
     {label ? (
@@ -25,16 +27,23 @@ export const Input: FC<IInputProps> = ({
         {label}
       </Typography>
     ) : null}
-    <TextInput
-      style={[styles.containerInput, style]}
-      value={value}
-      onChangeText={onChangeText}
-      secureTextEntry={secureTextEntry}
-      keyboardType={keyboardType}
-      autoCapitalize={autoCapitalize}
-      placeholder={placeholder}
-      placeholderTextColor={placeholderTextColor}
-    />
+    <View>
+      <TextInput
+        style={[styles.containerInput, style]}
+        value={value}
+        onChangeText={onChangeText}
+        secureTextEntry={secureTextEntry}
+        keyboardType={keyboardType}
+        autoCapitalize={autoCapitalize}
+        placeholder={placeholder}
+        placeholderTextColor={placeholderTextColor}
+      />
+      {icon ? (
+        <Pressable onPress={onPressIcon} style={styles.icon}>
+          <EyeIcon />
+        </Pressable>
+      ) : null}
+    </View>
   </View>
 );
 
@@ -50,4 +59,6 @@ Input.defaultProps = {
   style: {},
   containerStyle: {},
   labelStyle: {},
+  icon: false,
+  onPressIcon: () => {},
 };

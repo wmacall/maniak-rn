@@ -19,4 +19,12 @@ export default StyleSheet.create({
     paddingHorizontal: theme.scaleWidth(24),
     color: COLORS.PRIMARY,
   },
+  icon: {
+    position: 'absolute',
+    right: 0,
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: theme.scaleWidth(18),
+  },
 });

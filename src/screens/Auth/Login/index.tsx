@@ -10,6 +10,7 @@ export const Login: FC<ILoginProps> = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <View style={styles.container}>
@@ -31,9 +32,12 @@ export const Login: FC<ILoginProps> = () => {
             placeholder="password"
             value={password}
             onChangeText={_v => setPassword(_v)}
-            secureTextEntry
+            secureTextEntry={!showPassword}
             label="Password"
             containerStyle={styles.passwordInput}
+            style={styles.passwordContainer}
+            icon
+            onPressIcon={() => setShowPassword(prev => !prev)}
           />
           <Typography style={styles.labelForgot}>
             {i18n.t('login_screen_forgot_password_label')}

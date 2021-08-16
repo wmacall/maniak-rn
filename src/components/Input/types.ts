@@ -6,4 +6,6 @@ export interface IInputProps extends TextInputProps {
   containerStyle?: ViewStyle;
   labelStyle?: TextStyle;
   labelVariant?: TypographyVariantTypes;
+  icon?: boolean;
+  onPressIcon?: () => void;
 }
