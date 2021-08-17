@@ -22,7 +22,7 @@ export const userReducer = (
       return {
         user: {
           ...state.user,
-          ...action.payload,
+          token: `Bearer ${action.payload.token}`,
         },
       };
     case REQUEST_DATA_USER:

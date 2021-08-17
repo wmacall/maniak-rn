@@ -3,22 +3,21 @@ import React from 'react';
 import {FC} from 'react';
 import {Image, View} from 'react-native';
 import styles from './styles';
+import {IHomeItem} from 'screens/App/Home/types';
 
-export const Item: FC = () => (
+export const Item: FC<IHomeItem> = ({title, description, image}) => (
   <View style={styles.container}>
     <Image
       style={styles.image}
       resizeMode="cover"
       source={{
-        uri: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg',
+        uri: image,
       }}
     />
     <View style={styles.containerInformation}>
-      <Typography variant="title">Joyce</Typography>
+      <Typography variant="title">{title}</Typography>
       <Typography numberOfLines={1} style={styles.description}>
-        Aenean nibh dui, interdum non rhoncus fgejg ergergAenean nibh dui,
-        interdum non rhoncus fgejg ergerg Aenean nibh dui, interdum non rhoncus
-        fgejg ergerg
+        {description}
       </Typography>
     </View>
   </View>

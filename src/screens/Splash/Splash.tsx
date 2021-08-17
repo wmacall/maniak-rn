@@ -1,13 +1,12 @@
 import React from 'react';
+import {useSelector} from 'react-redux';
 import {AuthRoutes, HomeRoutes} from '@routes';
-import {store} from 'store';
+import {AppState} from 'store';
 
 export const Splash = () => {
-  const {
-    user: {
-      user: {token},
-    },
-  } = store.getState();
+  const {token} = useSelector(({user: {user}}: AppState) => ({
+    token: user.token,
+  }));
 
   if (token) {
     return <HomeRoutes />;

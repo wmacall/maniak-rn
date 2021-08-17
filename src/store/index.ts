@@ -4,6 +4,7 @@ import createSagaMiddleware from 'redux-saga';
 import AsyncStorage from '@react-native-community/async-storage';
 import {userReducer} from './user/reducer';
 import {rootSaga} from './user';
+import {User} from './user/model';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -30,5 +31,11 @@ const store = createStore(
 const persistor = persistStore(store);
 
 sagaMiddleware.run(rootSaga);
+
+export interface AppState {
+  user: {
+    user: User;
+  };
+}
 
 export {store, persistor};

@@ -10,5 +10,6 @@
   "home_screen_log_out_button": "LOG OUT",
   "app_name": "Maniak",
   "validation_invalid_email": "Email is required",
-  "validation_invalid_password": "Email is required"
+  "validation_invalid_password": "Email is required",
+  "empty_home": "No images available"
 }
