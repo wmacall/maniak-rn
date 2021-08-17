@@ -14,6 +14,8 @@ module.exports = {
           '@i18n': './src/i18n',
           '@constants': './src/constants',
           '@routes': './src/routes',
+          '@hooks': './src/hooks',
+          '@api': './src/api',
         },
       },
     ],

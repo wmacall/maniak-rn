@@ -7,5 +7,8 @@
   "login_screen_have_account": "Don’t have an account? ",
   "login_screen_sign_up": "Sign up here",
   "home_screen_title": "My Photos",
-  "home_screen_log_out_button": "LOG OUT"
+  "home_screen_log_out_button": "LOG OUT",
+  "app_name": "Maniak",
+  "validation_invalid_email": "Email is required",
+  "validation_invalid_password": "Email is required"
 }
