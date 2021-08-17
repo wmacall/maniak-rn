@@ -35,6 +35,8 @@ sagaMiddleware.run(rootSaga);
 export interface AppState {
   user: {
     user: User;
+    isLoading: boolean;
+    error: string;
   };
 }
 

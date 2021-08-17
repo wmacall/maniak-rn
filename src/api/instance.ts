@@ -1,6 +1,5 @@
 import axios from 'axios';
 import {store} from 'store';
-import Config from 'react-native-config';
 
 const state = async () => {
   return store.getState();
@@ -14,7 +13,11 @@ export const dispatchRequest = async (request: any) => {
   const _state = await state();
   instance.defaults.headers.common['Content-Type'] = 'application/json';
   instance.defaults.headers.common.Accept = 'application/json';
-  instance.defaults.headers.common.Authorization = _state?.user?.user?.token;
+  if (_state?.user?.user?.token) {
+    instance.defaults.headers.common.Authorization = _state.user.user.token;
+  }
+
+  console.log(instance.request);
 
   try {
     const resource = await instance(request);

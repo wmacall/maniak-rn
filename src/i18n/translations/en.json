@@ -11,5 +11,6 @@
   "app_name": "Maniak",
   "validation_invalid_email": "Email is required",
   "validation_invalid_password": "Email is required",
-  "empty_home": "No images available"
+  "empty_home": "No images available",
+  "error_message": "An error has ocurred"
 }
