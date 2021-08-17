@@ -1,13 +1,12 @@
 import React, {FC} from 'react';
 import {View, SafeAreaView} from 'react-native';
-import {ILoginProps} from './types';
 import {Content} from 'native-base';
 import styles from './styles';
 import i18n from 'i18n';
 import {Button, Input, Typography} from '@components';
 import {useLogin} from '@hooks';
 
-export const Login: FC<ILoginProps> = () => {
+export const Login: FC = () => {
   const {
     email,
     password,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {FlatList, View, SafeAreaView, Pressable} from 'react-native';
 import {Item, Typography} from '@components';
 import styles from './styles';
@@ -8,7 +8,7 @@ import {Spinner} from 'native-base';
 import {COLORS} from '@assets';
 import EmptyIcon from 'assets/svg/EmptyIcon';
 
-export const Home = () => {
+export const Home: FC = () => {
   const {isLoading, imageList, logOut} = useHome();
   return (
     <View style={styles.container}>

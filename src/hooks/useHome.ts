@@ -7,7 +7,7 @@ import {REMOVE_USER_DATA} from 'store/user/types';
 export const useHome = () => {
   const [imageList, setImageList] = useState<IHomeItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const dispath = useDispatch();
+  const dispatch = useDispatch();
 
   const getImages = async () => {
     try {
@@ -25,7 +25,7 @@ export const useHome = () => {
   }, []);
 
   const logOut = () => {
-    dispath({
+    dispatch({
       type: REMOVE_USER_DATA,
     });
   };

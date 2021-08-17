@@ -1,10 +1,10 @@
-import React, {useEffect} from 'react';
+import React, {FC, useEffect} from 'react';
 import {useSelector} from 'react-redux';
 import {AuthRoutes, HomeRoutes} from '@routes';
 import {AppState} from 'store';
 import RNBootSplash from 'react-native-bootsplash';
 
-export const Splash = () => {
+export const Splash: FC = () => {
   useEffect(() => {
     RNBootSplash.hide({fade: true});
   });
